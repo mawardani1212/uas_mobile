@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "816377949481",
+    "project_id": "mawar-auth",
+    "storage_bucket": "mawar-auth.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816377949481:android:91d35c7a5b3b801a5c1b38",
+        "android_client_info": {
+          "package_name": "com.example.mawar_uas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9tUeAtpEtpbgu1aU0KwcFiJpiZy0872w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
