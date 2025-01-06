@@ -229,7 +229,9 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        // backgroundColor: Colors.white,
         centerTitle: true,
+        automaticallyImplyLeading: false,
 
         title: Text(
           'Login',
@@ -340,25 +342,52 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                     ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: TextButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              // builder: (context) => ResetPasswordScreen(email: '',),
-                              builder: (context) => ForgotPasswordScreen(),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Align(
+                          alignment: Alignment.centerRight,
+                          child: TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  // builder: (context) => ResetPasswordScreen(email: '',),
+                                  builder: (context) => ResetPasswordScreen(email: '',),
+                                ),
+                              );
+                            },
+                            child: Text(
+                              'forgot pass email',
+                              style: TextStyle(
+                                color: const Color.fromARGB(195, 189, 186, 186),
+                              ),
                             ),
-                          );
-                        },
-                        child: Text(
-                          'forgot password?',
-                          style: TextStyle(
-                            color: Colors.black,
                           ),
                         ),
-                      ),
+                        SizedBox(width: 40,), 
+                        Align(
+                          alignment: Alignment.centerRight,
+                          child: TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  // builder: (context) => ResetPasswordScreen(email: '',),
+                                  builder: (context) => ForgotPasswordScreen(),
+                                ),
+                              );
+                            },
+                            child: Text(
+                              'forgot password?',
+                              style: TextStyle(
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                     SizedBox(height: 20),
                     SizedBox(

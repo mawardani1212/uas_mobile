@@ -443,6 +443,34 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    SizedBox(height: 40),
+                    Center(
+                      child: Image.asset(
+                        'assets/images/cuate.png', // Add this image to assets
+                        height: 200,
+                      ),
+                    ),
+                    SizedBox(height: 40),
+                    Center(
+                      child: Text(
+                        'Forgot Password?',
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 8),
+                    Center(
+                      child: Text(
+                        'Don\'t worry! It happens. Please enter phone number associated with your account.',
+                        style: TextStyle(
+                          color: Colors.grey[600],
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 40),
                     Text(
                       'Enter your email to reset your password',
                       style: TextStyle(color: Colors.grey[600]),
@@ -466,7 +494,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                       width: double.infinity,
                       child: ElevatedButton(
                         onPressed: _isLoading ? null : _sendPasswordResetEmail,
-                        child: Text('Send Reset Email'),
+                        child: Text('Send Reset Email', style: TextStyle(color: Colors.white, ),),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.black,
                           padding: EdgeInsets.symmetric(vertical: 16),

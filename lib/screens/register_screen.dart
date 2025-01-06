@@ -252,8 +252,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
 
       // Daftar nomor test
       Map<String, String> testNumbers = {
-        '+6282116196438': '123456',
-        '+6282116196434': '654321',
+        '+6281356489030': '111111',
+        // '+6281356489030': '654321',
       };
 
       try {
